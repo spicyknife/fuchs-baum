@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+/* IMPORTS */
+@import "../src/variables.scss";
+body {
+  color: #333333;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+p {
+  line-height: 1.8em;
+  font-weight: 100;
+  color: #000000;
+  font-family: 'roboto-condensed' sans-serif;
+  font-size: 1.2em;
+}
+#page {
+  background-color: #262626;
+  height: 150vh;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Caviar-Dreams';
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+}
+a {
+  text-decoration: none;
+  color: $basic-primary;
+  &:hover {
+    text-decoration: none;
+    color: $basic-primary-hover;
+  }
+}
+li {
+  font-size: 1.2em;
+}
+button,
+.button,
+.submit-button {
+  font-family: 'Caviar-Dreams';
+}
+.content-page {
+  padding: 8em 4em;
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 1.4em;
+    margin-top: 1.5em;
+  }
+  #spicyknife {
+    width: 8em;
+    margin: 1.5em 0;
+  }
+
+}
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/* MOBILE */
+/*****************************/
+@media (max-width: 700px) {
+  body {
+    font-size: 0.9em;
+  }
+    .content-page {
+      padding: 8em 1.75em;
+    }
+
+}
