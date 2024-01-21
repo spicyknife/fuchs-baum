@@ -1,0 +1,151 @@
+/*****************************/
+/* IMPORTS */
+@import "../../variables.scss";
+/*****************************/
+/* BERATUNG */
+#leistungen {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .centered-content {
+    text-align: center;
+    padding: 3em 1.5em;
+    width: 100%;
+    .leistung-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 4em;
+      #leistung-1,
+      #leistung-2,
+      #leistung-3 {
+        background-image: url('../../assets/img/bg-intro.jpg');
+        background-size: cover;
+      }
+      .leistung {
+        width: 30%;
+        height: 15em;
+        a {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: .4s;
+          &:hover {
+            background-color: $basic-primary-hover;
+            opacity: .95;
+            transition: .4s;
+            color: #fff;
+          }
+
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    h1 {
+      margin-bottom: 0.25em;
+    }
+  }
+  button {
+    &.modal-button {
+      width: 100%;
+      padding: 1em;
+      background-color: $basic-primary;
+      box-shadow: none;
+      border: 0;
+      color: $basic-white;
+      letter-spacing: 0.2em;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: $basic-primary-hover;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}
+/*****************************/
+/* MODAL */
+/*****************************/
+.modal-dialog {
+  max-width: 80em;
+  .modal-content {
+    .modal-header {
+      background-color: $basic-primary;
+      color: #fff;
+      letter-spacing: 0.2em;
+      text-align: center;
+      .btn-close {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .modal-text {
+    text-align: left;
+  }
+  .modal-footer {
+    button {
+      &.back-button {
+        max-width: 20em;
+      padding: 1em;
+      background-color: $basic-primary;
+      box-shadow: none;
+      border: 0;
+      color: $basic-white;
+      letter-spacing: 0.2em;
+      transition: background-color 0.3s;
+      display: block;
+      &:hover {
+        background-color: $basic-primary-hover;
+        transition: background-color 0.3s;
+      }
+      }
+    }
+  }
+  ul {
+    text-align: left;
+  }
+}
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/* MOBILE */
+/*****************************/
+@media (max-width: 700px) {
+  #beratung {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .centered-content {
+      text-align: center;
+      padding : 4em 0.5em;
+      .beratung-wrapper {
+        display: block;
+        text-align: center;
+        max-width: 80em;
+        margin-top: 4em;
+        .beratung {
+          width: 100%;
+          margin-bottom: 2em;
+          h3 {
+            margin-bottom: 0.75em;
+          }
+        }
+      }
+      h1 {
+        margin-bottom: 0.25em;
+      }
+    }
+
+  }
+}
