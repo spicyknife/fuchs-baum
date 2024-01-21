@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 40em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,20 +14,27 @@
     text-align: center;
     padding: 3em 1.5em;
     width: 100%;
+    color: #fff;
     .leistung-wrapper {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: flex-start;
       margin-top: 4em;
+      flex-wrap: wrap;
       #leistung-1,
       #leistung-2,
       #leistung-3 {
-        background-image: url('../../assets/img/bg-intro.jpg');
-        background-size: cover;
+        // background-image: url('../../assets/img/bg-intro.jpg');
+        // background-size: cover;
+        background-color: #1c1c1c;
       }
       .leistung {
-        width: 30%;
-        height: 15em;
+        width: 24%;
+        // width: 33%;
+        height: 20em;
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+
         a {
           width: 100%;
           height: 100%;
@@ -36,6 +42,9 @@
           justify-content: center;
           align-items: center;
           transition: .4s;
+          font-weight: 500;
+          color: #fff;
+          font-size: 1.25em;
           &:hover {
             background-color: $basic-primary-hover;
             opacity: .95;

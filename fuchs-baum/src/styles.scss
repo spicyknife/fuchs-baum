@@ -6,6 +6,7 @@ body {
   font-style: normal;
   letter-spacing: 0.1em;
   margin: 0;
+  font-family: 'roboto-condensed' sans-serif;
 }
 p {
   line-height: 1.8em;
@@ -16,13 +17,12 @@ p {
 }
 #page {
   background-color: #262626;
-  height: 150vh;
+  // height: 150vh;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Caviar-Dreams';
   letter-spacing: 0.2em;
   margin-bottom: 0.5em;
 }
@@ -40,7 +40,7 @@ li {
 button,
 .button,
 .submit-button {
-  font-family: 'Caviar-Dreams';
+  // font-family: 'Caviar-Dreams';
 }
 .content-page {
   padding: 8em 4em;
