@@ -13,7 +13,10 @@ p {
   font-weight: 100;
   color: #fff;
   font-family: 'roboto-condensed' sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+.highlight-color {
+  color: $basic-primary;
 }
 #page {
   background-color: #262626;

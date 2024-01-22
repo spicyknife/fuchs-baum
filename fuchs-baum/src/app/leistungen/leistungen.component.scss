@@ -105,17 +105,35 @@
 /* MODAL */
 /*****************************/
 .modal-dialog {
-  max-width: 80em;
+  max-width: 50em;
   .modal-content {
     .modal-header {
       background-color: $basic-primary;
       color: #fff;
       letter-spacing: 0.2em;
-      text-align: center;
       .btn-close {
+        color: #fff;
         &:focus {
           box-shadow: none;
         }
+      }
+    }
+  }
+  .modal-body {
+    background-color: #272727;
+    padding-top: 2em;
+    .info-icon {
+      fill: #fff;
+      width: 3.5em;
+      height: 3.5em;
+      margin-bottom: 0.5em;
+    }
+    .modal-theme {
+      height: 5em;
+      width: 100%;
+      &.baumpflege {
+        background-image: url('../../assets/img/baumpflege.jpg');
+        background-size: cover;
       }
     }
   }
@@ -123,6 +141,7 @@
     text-align: left;
   }
   .modal-footer {
+    background-color: #272727;
     button {
       &.back-button {
         max-width: 20em;
