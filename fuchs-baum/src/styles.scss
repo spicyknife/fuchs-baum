@@ -18,15 +18,13 @@ p {
 .highlight-color {
   color: $basic-primary;
 }
-#page {
+.page {
   background-color: #262626;
-  // height: 150vh;
 }
 h1,
 h2,
 h3,
 h4 {
-  // letter-spacing: 0.2em;
   font-family: intercom, sans-serif;
   text-transform: uppercase;
   margin-bottom: 0.5em;
@@ -41,11 +39,6 @@ a {
 }
 li {
   font-size: 1.2em;
-}
-button,
-.button,
-.submit-button {
-  // font-family: 'Caviar-Dreams';
 }
 .content-page {
   padding: 8em 4em;
