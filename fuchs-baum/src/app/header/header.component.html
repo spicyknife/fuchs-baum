@@ -13,13 +13,13 @@
             <span></span>
             <span></span>
             <ul id="menu">
-              <a href="/home#intro"><li class="subnav-item">Home</li></a>
-              <a href="/home#leistungen"
+              <a href="/#intro"><li class="subnav-item">Home</li></a>
+              <a href="/#leistungen" routerLinkActive="router-link-active"
                 ><li class="subnav-item">Leistungen</li></a
               >
-              <a href="/home#about-me"><li class="subnav-item">Über uns</li></a>
-              <a href="/impressum"><li class="subnav-item">Impressum</li></a>
-              <a href="/datenschutz"
+              <a href="/#about-me"><li class="subnav-item">Über uns</li></a>
+              <a [routerLink]="['/impressum']" routerLinkActive="router-link-active"><li class="subnav-item">Impressum</li></a>
+              <a [routerLink]="['/datenschutz']" routerLinkActive="router-link-active"
                 ><li class="subnav-item">Datenschutz</li></a
               >
             </ul>
@@ -29,7 +29,7 @@
       <!-- ******************************** -->
       <!-- LOGO -->
       <div class="col-4 logo-wrapper">
-        <a href="home">
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active">
           <img class="header-logo" src="../../assets/img/header-logo.png" />
         </a>
       </div>
