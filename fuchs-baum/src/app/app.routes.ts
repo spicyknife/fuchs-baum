@@ -1,3 +1,4 @@
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ImpressumComponent } from './impressum/impressum.component';
@@ -11,10 +12,10 @@ export const routes: Routes = [
   { path: 'datenschutz', component: DatenschutzComponent },
 ];
 
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// })
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
 
 export class AppRoutingModule {}
 
