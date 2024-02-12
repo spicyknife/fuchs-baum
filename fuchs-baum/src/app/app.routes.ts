@@ -5,7 +5,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
 
-export const routes: Routes = [
+const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'home', component: HomepageComponent },
   { path: 'impressum', component: ImpressumComponent },
