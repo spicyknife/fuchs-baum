@@ -18,10 +18,14 @@
                 ><li class="subnav-item">Leistungen</li></a
               >
               <a href="/#about-me"><li class="subnav-item">Über uns</li></a>
-              <a href="/impressum#imprint"
+              <a
+                [routerLink]="['impressum']"
+                routerLinkActive="router-link-active"
                 ><li class="subnav-item">Impressum</li></a
               >
-              <a href="/datenschutz"
+              <a
+                [routerLink]="['datenschutz']"
+                routerLinkActive="router-link-active"
                 ><li class="subnav-item">Datenschutz</li></a
               >
             </ul>
