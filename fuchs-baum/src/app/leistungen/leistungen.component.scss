@@ -19,7 +19,8 @@
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-top: 4em;
+      margin: 4em auto;
+      max-width: 1800px;
       flex-wrap: wrap;
       #leistung-1 {
         background-image: url('../../assets/img/baumpflege-2.jpg');
